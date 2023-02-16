@@ -7,7 +7,7 @@ export default function App() {
       <div className="row">
         <div className="column column-50 column-offset-25">
           <h1>akord-bootstrap</h1>
-          <p>To quickly get started with AkordJs, clone this repo and build.  In the repo, we've setup the dependencies you'll need to work with AkordJs.</p>
+          <p>To quickly get started with AkordJs, clone this repo and build.  In the repo, we've setup the dependencies you'll need for crypto to work.</p>
           <p>For more information on AkordJS:</p>
           <ul>
             <li>
