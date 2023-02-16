@@ -1,34 +1,39 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Store from "./store";
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import Wallet from "./pages/Wallet";
-import Dairy from "./pages/Diary";
-import Vaults from "./pages/Vaults";
-import VaultView from "./pages/VaultView";
-
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.css";
+import VaultList from "./VaultList";
 
 export default function App() {
   return (
-    <Store>
-      <div className="container">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Home />} />
-              <Route path="wallet" element={<Wallet />} />
-              <Route path="vaults" element={<Vaults />} />
-              <Route path="vaults/:vaultId" element={<VaultView />} />
-              <Route path="permadiary" element={<Dairy />} />
-              <Route path="*" element={<p>No Page</p>} />
-            </Route>
-          </Routes>
-        </BrowserRouter>
+    <div className="container">
+      <div className="row">
+        <div className="column column-50 column-offset-25">
+          <h1>akord-bootstrap</h1>
+          <p>To quickly get started with AkordJs, clone this repo and build.  In the repo, we've setup the dependencies you'll need to work with AkordJs.</p>
+          <p>For more information on AkordJS:</p>
+          <ul>
+            <li>
+              <a href="https://github.com/Akord-com/akord-js">
+                <code>https://github.com/Akord-com/akord-js</code>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Akord-com/akord-bootstrap">
+                <code>https://github.com/Akord-com/akord-bootstrap</code>
+              </a>
+            </li>
+            <li>
+              <a href="https://docs.akord.com/learn/technical-litepaper">
+                <code>Akord Docs and Litepaper</code>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </Store>
+      <div className="row">
+        <div className="column column-50 column-offset-25">
+          <VaultList />
+        </div>
+      </div>
+    </div >
   );
 }
 
