@@ -8,7 +8,7 @@ To help you get started with this as quickly as possible, we released this repo,
 
 Simple. Just follow the steps:
 
-1 - clone this repo from github and `cd akord-bootstrap`
-2 - install the dependencies `yarn install`
-3 - test your app by running `yarn start`
-4 - modify the app and add your code
+1. clone this repo from github and `cd akord-bootstrap`
+2. install the dependencies `yarn install`
+3. test your app by running `yarn start`
+4. modify the app, add your code, rinse, repeat
