@@ -2,7 +2,7 @@
 
 To work with cryptography and encryption, your Akord application will need to be configured to use the required NPM modules and polyfills.
 
-To help you get started with this as quickly as possible, we released this repo, Akord Bootstrap.
+To help you get started as quickly as possible, we've released this repo, Akord Bootstrap.
 
 ## Building an App
 
